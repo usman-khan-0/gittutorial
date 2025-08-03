@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VroomVroom Rentals - Vehicle Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+        .vehicle-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .vehicle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1e40af;
+        }
+        .btn-secondary {
+            background-color: #6b7280;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">VroomVroom Rentals</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-300 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Vehicles</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Book Now</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <h2 class="text-4xl font-semibold text-gray-800 text-center mb-8">Browse Our Vehicles</h2>
+        <div class="space-y-6">
+            <!-- Vehicle 1 -->
+            <div class="vehicle-card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Sports Car</h3>
+                <ul class="list-disc list-inside text-gray-600 mb-4">
+                    <li><strong>Color:</strong> Red</li>
+                    <li><strong>Speed:</strong> 120 km/h</li>
+                    <li><strong>Special Feature:</strong> Vehicle Confidential</li>
+                    <li><strong>Availability:</strong> In Stock</li>
+                </ul>
+                <div class="flex space-x-4">
+                    <button class="btn-primary text-white px-4 py-2 rounded">Rent Now</button>
+                    <button class="btn-secondary text-white px-4 py-2 rounded">View Details</button>
+                </div>
+            </div>
+            <!-- Vehicle 2 -->
+            <div class="vehicle-card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Luxury Sedan</h3>
+                <ul class="list-disc list-inside text-gray-600 mb-4">
+                    <li><strong>Color:</strong> Blue</li>
+                    <li><strong>Speed:</strong> 150 km/h</li>
+                    <li><strong>Special Feature:</strong> Vehicle Confidential</li>
+                    <li><strong>Availability:</strong> Limited</li>
+                </ul>
+                <div class="flex space-x-4">
+                    <button class="btn-primary text-white px-4 py-2 rounded">Rent Now</button>
+                    <button class="btn-secondary text-white px-4 py-2 rounded">View Details</button>
+                </div>
+            </div>
+            <!-- Vehicle 3 -->
+            <div class="vehicle-card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Eco SUV</h3>
+                <ul class="list-disc list-inside text-gray-600 mb-4">
+                    <li><strong>Color:</strong> Green</li>
+                    <li><strong>Speed:</strong> 80 km/h</li>
+                    <li><strong>Special Feature:</strong> Vehicle Confidential</li>
+                    <li><strong>Availability:</strong> In Stock</li>
+                </ul>
+                <div class="flex space-x-4">
+                    <button class="btn-primary text-white px-4 py-2 rounded">Rent Now</button>
+                    <button class="btn-secondary text-white px-4 py-2 rounded">View Details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-lg font-semibold mb-2">VroomVroom Rentals</h3>
+            <ul class="list-none space-y-2">
+                <li><a href="mailto:info@vroomvroom.com" class="hover:text-blue-300 transition">Contact: info@vroomvroom.com</a></li>
+                <li><a href="#" class="hover:text-blue-300 transition">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-blue-300 transition">Terms of Service</a></li>
+            </ul>
+            <p class="mt-4">&copy; 2025 VroomVroom Rentals. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
